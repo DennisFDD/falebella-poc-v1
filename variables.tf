@@ -9,7 +9,7 @@ variable "crn" {
 }
 variable "image_name" {
   description = "Name of the image you want to use"
-  default     = "ptnew"
+  default     = "clai-pivote"
 }
 variable "memory" {
   type        = number
