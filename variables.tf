@@ -13,7 +13,7 @@ variable "image_name" {
 }
 variable "memory" {
   type        = number
-  default     = 4
+  default     = 6
   description = "The amount of memory that you want to assign to your instance in gigabytes"
 }
 variable "processors" {
@@ -23,7 +23,7 @@ variable "processors" {
 }
 variable "instance_name" {
   type        = string
-  default     = "paytesteruser1"
+  default     = "development1"
   description = "The name to assign to the instance"
 }
 variable "processor_type" {
@@ -38,12 +38,12 @@ variable "sys_type" {
 }
 variable "storage_type" {
   type        = string
-  default     = "tier1"
+  default     = "tier3"
   description = "The type of storage tier to assign for storage volume performance: 'tier1' or 'tier3'"
 }
 variable "ssh_key_name" {
   type        = string
-  default = "paytestersshkey1"
+  default = "ssh-poc"
   description = "The name of the public SSH RSA key to use when creating the instance, as defined for the selected Power Systems Virtual Server CRN"
 }
 variable "ssh_key" {
@@ -53,6 +53,6 @@ variable "ssh_key" {
 }
 variable "network_name" {
   type        = string
-  default = "paytester-sn1"
+  default = "poc-sn1"
   description = "The network ID or name to assign to the instance, as defined for the selected Power Systems Virtual Server CRN"
 }
