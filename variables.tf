@@ -1,10 +1,10 @@
 variable "ibm_cloud_api_key" {
   description = "API Key to use."
-  default     = "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  default     = "ZztJTSzYyvy9mEbu2U3asaBaSsy_mAVdy4aqdLp3IWY_"
 }
 variable "crn" {
   type        = string
-  default     = "crn:v1:staging:public:power-iaas:dal12:a/efe5e8b9d3f04b948790fe5499bd18bc:6021a723-bcab-4d3f-9985-d0cb2f864f35::"
+  default     = "crn:v1:bluemix:public:power-iaas:us-south:a/8fa8c2d1e1d943ad862c1e1d0860ed79:42175bd4-dc42-4ce0-ac6f-bc55caac4b7c::"
   description = "Power Systems Virtual Server CRN"
 }
 variable "image_name" {
@@ -43,12 +43,12 @@ variable "storage_type" {
 }
 variable "ssh_key_name" {
   type        = string
-  default = "ssh-poc"
+  default = "ssh-poc-new"
   description = "The name of the public SSH RSA key to use when creating the instance, as defined for the selected Power Systems Virtual Server CRN"
 }
 variable "ssh_key" {
   type        = string
-  default = "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDnGXfy7fnVTA3tR755HbYKu8oFNUn/44nlOHwucuRSRZxLT497LuK+RCIs75sUjYTStHeaMHZXhZZoxEgBPcp5xKWCgAFeWSwdO/9B09SOeioLhS/B2nTYUKtyIJ/1Ht2mQfNfOm4H6eDBNNuk01IzzINW73sZ52GLR0FJJIV8SGwEcZt4ytXMDscdk+KEShA5zrUrroR4IVtnboGFIsRs6ryXYLduVlR4JXqwy2m4q9U8r4VW5jH/GY4jsX9I+7W6/Ngy6H8YL52/rWtJQP6gqYxo74YU8/9YyB85A0v01QdUQYELy9lFwKRvxzQBZvLd2gAWGrE+12uc4TmtINaB rsa-key-20220909"
   description = "The name of the public SSH RSA key to use when creating the instance, as defined for the selected Power Systems Virtual Server CRN"
 }
 variable "network_name" {
