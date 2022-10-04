@@ -19,11 +19,11 @@ resource "ibm_pi_network" "power_network" {
   pi_network_name      = var.network_name
   pi_cloud_instance_id = local.cloud_instance_id
   pi_network_type      = "vlan"
-  pi_cidr              = "10.0.0.0/24"
-  pi_gateway           = "10.0.0.1"
+  pi_cidr              = "192.168.0.0/28"
+  pi_gateway           = "192.168.0.1"
   pi_ipaddress_range {
-    pi_starting_ip_address  = "10.0.0.2"
-    pi_ending_ip_address    = "10.0.0.256"
+    pi_starting_ip_address  = "192.168.0.2"
+    pi_ending_ip_address    = "192.168.0.13"
   }
 }
 data "ibm_pi_network" "network" {
